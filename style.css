@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; 
+  }
+  
+
+  .music-player {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    width: 30vh;
+    margin: 0;
+    margin-top: 100px;
+    box-shadow: 10px 5px 5px gray;
+  }
+  
+  .controls button {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .track-info {
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-family: 'Rubik Glitch', system-ui;
+    
+  }
+  
+  .track-title,
+  .artist {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+
+
+.progress-container {
+    margin-top: 20px;
+    width: 80%;
+    height: 10px;
+    background-color: #e0e0e0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #21e824;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .img10{
+    border-radius: 10px;
+  }
+
+  .album-cover {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px gray;
+  }
+
+
+  .dancing-character {
+    position: relative;
+    width: 100px;
+    height: 200px;
+  }
+  
+  .head {
+    width: 60px;
+    height: 60px;
+    background-color: #00ff0d;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: rgb(0, 0, 0) solid;
+    
+  }
+  
+  .body {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+  }
+  
+  .left-leg,
+  .right-leg {
+    width: 20px;
+    height: 40px;
+    background-color: #21e824;
+    position: absolute;
+    bottom: 10;
+    border-radius: 10px;
+  }
+  
+  .left-leg {
+    left: 30%;
+  }
+  
+  .right-leg {
+    left: 50%;
+  }
+  
+  @keyframes dance {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+  }
+  
+  .dancing-character {
+    animation: dance 1s infinite alternate;
+  }
+
+  .center1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header{
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+  
+  }
+
+  
+  .eye-container {
+    position: relative;
+    width: 20px;
+    height: 10px;
+  }
+  
+  .eye {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pupil {
+    width: 50%;
+    height: 100%;
+    background-color: #040303;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+  }
+  
+
+  
+  .eye-container:hover .pupil {
+    width: 100%;
+  }
+
+  .text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #21e824;
+    font-family: 'Creepster', system-ui;
+    font-size: 100px;
+
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #21e824;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-family: 'Creepster', system-ui;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    max-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5em;
+  }
+  
+  .footer-section p {
+    line-height: 1.5;
+  }
+  
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+  }
+
